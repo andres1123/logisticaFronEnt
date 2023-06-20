@@ -1,0 +1,37 @@
+<div class="containter">
+  <div class="card">
+    <div class="card-header">
+      <h3>Consulta de Datos de el cliente</h3>
+    </div>
+    <div class="card-body">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>ID Cliente</th>
+            <th>Tipo identificación cliente</th>
+            <th>Número de identificación Cliente</th>
+            <th>Nombre Cliente</th>
+            <th>Tipo de producto</th>
+            <th>dirección</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let c of cliente ;let  i=index;" class="text-center">
+            <td>{{c.idCliente}}</td>
+            <td>{{c.numeroIdentificacionCliente}}</td>
+            <td>{{c.tipoIdentificacionCliente}}</td>
+            <td>{{c.nombreCliente}}</td>
+            <td>{{c.tipoProducto}}</td>
+            <td>{{c.direccion}}</td>
+            <td>
+              <button class="btn btn-warning">Editar Cliente</button>
+              <button (click)="onEliminar(i+1)" class="btn btn-danger">Eliminar Cliente</button>
+            </td>
+          </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>

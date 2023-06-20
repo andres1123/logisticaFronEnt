@@ -1,0 +1,38 @@
+<div class="container mt-3">
+  <h1>Ingresa los datos para realizar una nueva entrega</h1>
+  <hr>
+
+      <form class="row g-3">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Número de identificación</label>
+          <input type="number" class="form-control" id="exampleFormControlInput1" required>
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Cantidad de producto</label>
+          <input type="number" name="cantidad"  [(ngModel)]="cantidad" class="form-control" id="exampleFormControlTextarea1">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Fecha de registro (AAAA-MM-DD)</label>
+          <input type="text" class="form-control" id="exampleFormControlTextarea1">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Fecha de entrega (AAAA-MM-DD)</label>
+          <input type="text" class="form-control" id="exampleFormControlTextarea1">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Número de placa</label>
+          <input type="text" name="placa" [(ngModel)]="placa" class="form-control" id="exampleFormControlTextarea1">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Numero de puerto</label>
+          <input type="text" puerto="puerto" [(ngModel)]="puerto" class="form-control" id="exampleFormControlTextarea1">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">precio</label>
+          <input type="text" puerto="precio" [(ngModel)]="precio" class="form-control" id="exampleFormControlTextarea1">
+        </div>
+        <div class="col-auto text-center">
+          <button (click)="consultarValor()" class="btn btn-primary mb-6">Consultar valor</button>
+        </div>
+  </form>
+</div>

@@ -1,0 +1,27 @@
+<div class="container mt-3">
+  <h1>Ingresa los datos para crear un nuevo puerto o bodega en el sistema</h1>
+  <hr>
+
+      <form class="row g-3">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1"  class="form-label">Id  de el cliente</label>
+          <input type="number" name="idCliente"class="form-control" [(ngModel)]="medioAlmacenamiento.idCliente" id="exampleFormControlInput1">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Nombre de puerto o Bodega</label>
+          <input type="text" name="nombre" [(ngModel)]="medioAlmacenamiento.nombre" class="form-control" id="exampleFormControlTextarea1">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Ubicación</label>
+          <input type="text" name="ubicacion" [(ngModel)]="medioAlmacenamiento.ubicacion" class="form-control" id="exampleFormControlTextarea1">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Tipo de almacemiento (Bodega o puerto)</label>
+          <input type="text" name="tipoAlmacenamiento"[(ngModel)]="medioAlmacenamiento.tipoAlmacenamiento" class="form-control" id="exampleFormControlTextarea1">
+        </div>
+
+        <div class="col-auto text-center">
+          <button (click)="guardarMedioAlmacenamiento(medioAlmacenamiento)" class="btn btn-primary mb-6">Crear nuevo puerto o bodega </button>
+        </div>
+  </form>
+</div>

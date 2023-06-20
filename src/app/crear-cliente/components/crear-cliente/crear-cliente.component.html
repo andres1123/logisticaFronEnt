@@ -1,0 +1,30 @@
+<div class="container mt-3">
+  <h1>Ingresa los datos para crear un nuevo cliente en el sistema de logistica</h1>
+  <hr>
+
+      <form action="" class="row g-3">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Tipo de identificación</label>
+          <input   name="tipoIdentiaicacionCliente" [(ngModel)]="cliente.tipoIdentificacionCliente" class="form-control" id="exampleFormControlInput1">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Número de identficación</label>
+          <input type="number" name="numeroIdentificacionCliente" [(ngModel)]="cliente.numeroIdentificacionCliente" class="form-control" id="exampleFormControlTextarea1">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Nombre de cliente</label>
+          <input type="text"  name="nombreCliente" [(ngModel)]="cliente.nombreCliente"  class="form-control" id="exampleFormControlTextarea1" >
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Tipo de producto manejado</label>
+          <input type="text" name="tipoProducto" class="form-control" [(ngModel)]="cliente.tipoProducto" id="exampleFormControlTextarea1">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Dirección</label>
+          <input type="text" name="direccion" class="form-control" [(ngModel)]="cliente.direccion"id="exampleFormControlTextarea1">
+        </div>
+        <div class="col-auto text-center">
+          <button (click)="guardarCliente(cliente)"  class="btn btn-primary mb-6">Crear nuevo cliente </button>
+        </div>
+  </form>
+</div>
